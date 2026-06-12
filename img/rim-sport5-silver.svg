@@ -1,0 +1,71 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="tire1" cx="44%" cy="38%" r="58%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#1e1e1e"/><stop offset="100%" stop-color="#050505"/>
+  </radialGradient>
+  <radialGradient id="disc1" cx="38%" cy="32%" r="65%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#dcdcdc"/><stop offset="35%" stop-color="#b0b0b0"/>
+    <stop offset="70%" stop-color="#787878"/><stop offset="100%" stop-color="#484848"/>
+  </radialGradient>
+  <linearGradient id="spoke1" x1="0%" y1="100%" x2="20%" y2="0%">
+    <stop offset="0%" stop-color="#888"/><stop offset="30%" stop-color="#e0e0e0"/>
+    <stop offset="60%" stop-color="#f5f5f5"/><stop offset="100%" stop-color="#b0b0b0"/>
+  </linearGradient>
+  <linearGradient id="ring1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#f8f8f8"/><stop offset="30%" stop-color="#c0c0c0"/>
+    <stop offset="70%" stop-color="#e8e8e8"/><stop offset="100%" stop-color="#909090"/>
+  </linearGradient>
+  <radialGradient id="hub1" cx="35%" cy="30%" r="60%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#d0d0d0"/><stop offset="100%" stop-color="#505050"/>
+  </radialGradient>
+  <radialGradient id="hl1" cx="36%" cy="28%" r="48%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="white" stop-opacity="0.28"/><stop offset="100%" stop-color="white" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="rc1"><circle cx="200" cy="200" r="149"/></clipPath>
+  <filter id="ds1" x="-15%" y="-15%" width="130%" height="130%">
+    <feDropShadow dx="2" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.65"/>
+  </filter>
+</defs>
+<rect width="400" height="400" fill="#16100A"/>
+<ellipse cx="204" cy="396" rx="158" ry="10" fill="rgba(0,0,0,0.45)"/>
+<!-- Tire -->
+<circle cx="200" cy="200" r="190" fill="url(#tire1)" filter="url(#ds1)"/>
+<circle cx="200" cy="200" r="186" fill="none" stroke="#1e1e1e" stroke-width="3"/>
+<circle cx="200" cy="200" r="164" fill="none" stroke="#161616" stroke-width="4"/>
+<circle cx="200" cy="200" r="156" fill="none" stroke="#202020" stroke-width="1.5"/>
+<!-- Rim disc -->
+<circle cx="200" cy="200" r="149" fill="url(#disc1)"/>
+<!-- Dark between spokes -->
+<circle cx="200" cy="200" r="149" fill="#1a1a1a" clip-path="url(#rc1)"/>
+<!-- 5 spokes -->
+<g clip-path="url(#rc1)">
+  <g transform="rotate(0,200,200)"><polygon points="191,164 171,54 229,54 209,164" fill="url(#spoke1)"/>
+    <line x1="191" y1="164" x2="171" y2="54" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <line x1="209" y1="164" x2="229" y2="54" stroke="rgba(0,0,0,0.35)" stroke-width="1.5"/></g>
+  <g transform="rotate(72,200,200)"><polygon points="191,164 171,54 229,54 209,164" fill="url(#spoke1)"/>
+    <line x1="191" y1="164" x2="171" y2="54" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <line x1="209" y1="164" x2="229" y2="54" stroke="rgba(0,0,0,0.35)" stroke-width="1.5"/></g>
+  <g transform="rotate(144,200,200)"><polygon points="191,164 171,54 229,54 209,164" fill="url(#spoke1)"/>
+    <line x1="191" y1="164" x2="171" y2="54" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <line x1="209" y1="164" x2="229" y2="54" stroke="rgba(0,0,0,0.35)" stroke-width="1.5"/></g>
+  <g transform="rotate(216,200,200)"><polygon points="191,164 171,54 229,54 209,164" fill="url(#spoke1)"/>
+    <line x1="191" y1="164" x2="171" y2="54" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <line x1="209" y1="164" x2="229" y2="54" stroke="rgba(0,0,0,0.35)" stroke-width="1.5"/></g>
+  <g transform="rotate(288,200,200)"><polygon points="191,164 171,54 229,54 209,164" fill="url(#spoke1)"/>
+    <line x1="191" y1="164" x2="171" y2="54" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <line x1="209" y1="164" x2="229" y2="54" stroke="rgba(0,0,0,0.35)" stroke-width="1.5"/></g>
+  <!-- Hub -->
+  <circle cx="200" cy="200" r="36" fill="url(#hub1)"/>
+  <circle cx="200" cy="200" r="36" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+</g>
+<!-- Chrome outer ring -->
+<circle cx="200" cy="200" r="145" fill="none" stroke="url(#ring1)" stroke-width="9"/>
+<!-- Center cap -->
+<circle cx="200" cy="200" r="25" fill="#c8c8c0"/>
+<circle cx="200" cy="200" r="22" fill="#808078"/>
+<circle cx="200" cy="200" r="15" fill="#b8b8b0"/>
+<circle cx="200" cy="200" r="7"  fill="#303028"/>
+<!-- Highlight -->
+<circle cx="200" cy="200" r="190" fill="url(#hl1)"/>
+<circle cx="200" cy="200" r="149" fill="url(#hl1)" opacity="0.7"/>
+</svg>

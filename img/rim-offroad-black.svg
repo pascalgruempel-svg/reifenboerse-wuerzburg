@@ -1,0 +1,80 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="tire4" cx="44%" cy="38%" r="58%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#1e1e1e"/><stop offset="100%" stop-color="#050505"/>
+  </radialGradient>
+  <radialGradient id="disc4" cx="40%" cy="35%" r="60%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#303030"/><stop offset="50%" stop-color="#181818"/>
+    <stop offset="100%" stop-color="#080808"/>
+  </radialGradient>
+  <linearGradient id="spoke4" x1="0%" y1="100%" x2="25%" y2="0%">
+    <stop offset="0%" stop-color="#282828"/><stop offset="40%" stop-color="#484848"/>
+    <stop offset="65%" stop-color="#555555"/><stop offset="100%" stop-color="#383838"/>
+  </linearGradient>
+  <linearGradient id="ring4" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#606060"/><stop offset="50%" stop-color="#303030"/>
+    <stop offset="100%" stop-color="#505050"/>
+  </linearGradient>
+  <radialGradient id="hub4" cx="35%" cy="30%" r="60%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#505050"/><stop offset="100%" stop-color="#141414"/>
+  </radialGradient>
+  <radialGradient id="hl4" cx="35%" cy="27%" r="42%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="white" stop-opacity="0.14"/><stop offset="100%" stop-color="white" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="rc4"><circle cx="200" cy="200" r="149"/></clipPath>
+  <filter id="ds4" x="-15%" y="-15%" width="130%" height="130%">
+    <feDropShadow dx="2" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.75"/>
+  </filter>
+</defs>
+<rect width="400" height="400" fill="#16100A"/>
+<ellipse cx="204" cy="396" rx="158" ry="10" fill="rgba(0,0,0,0.5)"/>
+<!-- Tire with knobby-ish sidewall -->
+<circle cx="200" cy="200" r="190" fill="url(#tire4)" filter="url(#ds4)"/>
+<circle cx="200" cy="200" r="186" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+<circle cx="200" cy="200" r="178" fill="none" stroke="#141414" stroke-width="2"/>
+<circle cx="200" cy="200" r="170" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="200" cy="200" r="162" fill="none" stroke="#141414" stroke-width="2"/>
+<circle cx="200" cy="200" r="156" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+<circle cx="200" cy="200" r="149" fill="url(#disc4)"/>
+<circle cx="200" cy="200" r="149" fill="#0e0e0e" clip-path="url(#rc4)"/>
+<!-- 6 chunky spokes -->
+<g clip-path="url(#rc4)">
+  <g transform="rotate(0,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="186" y1="164" x2="162" y2="54" stroke="rgba(80,80,80,0.5)" stroke-width="2"/>
+    <line x1="214" y1="164" x2="238" y2="54" stroke="rgba(10,10,10,0.6)" stroke-width="2"/>
+    <!-- Center groove on spoke -->
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <g transform="rotate(60,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="186" y1="164" x2="162" y2="54" stroke="rgba(80,80,80,0.5)" stroke-width="2"/>
+    <line x1="214" y1="164" x2="238" y2="54" stroke="rgba(10,10,10,0.6)" stroke-width="2"/>
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <g transform="rotate(120,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <g transform="rotate(180,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <g transform="rotate(240,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <g transform="rotate(300,200,200)"><polygon points="186,164 162,54 238,54 214,164" fill="url(#spoke4)"/>
+    <line x1="200" y1="160" x2="200" y2="60" stroke="rgba(0,0,0,0.4)" stroke-width="4"/>
+  </g>
+  <!-- Heavy outer ring -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#383838" stroke-width="14"/>
+  <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(70,70,70,0.4)" stroke-width="4"/>
+  <!-- Hex center cap -->
+  <polygon points="200,160 234,180 234,220 200,240 166,220 166,180" fill="url(#hub4)"/>
+  <polygon points="200,160 234,180 234,220 200,240 166,220 166,180" fill="none" stroke="rgba(80,80,80,0.4)" stroke-width="2"/>
+  <circle cx="200" cy="200" r="20" fill="#1a1a1a"/>
+</g>
+<!-- Outer ring -->
+<circle cx="200" cy="200" r="145" fill="none" stroke="url(#ring4)" stroke-width="10"/>
+<!-- Center bolt detail -->
+<circle cx="200" cy="200" r="18" fill="#282828"/>
+<circle cx="200" cy="200" r="14" fill="#161616"/>
+<circle cx="200" cy="200" r="7"  fill="#0e0e0e"/>
+<circle cx="200" cy="200" r="190" fill="url(#hl4)"/>
+</svg>
